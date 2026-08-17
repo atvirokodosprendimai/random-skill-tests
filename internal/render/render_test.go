@@ -398,7 +398,7 @@ const goldenReportEmpty = `
 const goldenInvoiceEmpty = `
 Invoice · <project>                                    01 Aug 2026 – 31 Aug 2026
 ────────────────────────────────────────────────────────────────────────────────
-  no rate set — 'tempo rate <project> <amount>'
+  no rate set — 'tempo rate set <project> <amount>'
 
   nothing billable in this range — log time with 'tempo start <project>'
 `
@@ -406,7 +406,7 @@ Invoice · <project>                                    01 Aug 2026 – 31 Aug 2
 const goldenProjectsEmpty = `
 Projects
 ────────────────────────────────────────────────────────────────────────────────
-  no projects yet — create one with 'tempo project add <slug>'
+  no projects yet — create one with 'tempo projects add <slug>'
 `
 
 const goldenEntriesEmpty = `

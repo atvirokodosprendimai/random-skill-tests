@@ -93,7 +93,7 @@ func (r *Renderer) Invoice(v core.Invoice) error {
 	r.rule(e)
 
 	if v.CentsPerHour == 0 {
-		e.line("  " + r.dim("no rate set — 'tempo rate "+project+" <amount>'"))
+		e.line("  " + r.dim("no rate set — 'tempo rate set "+project+" <amount>'"))
 	} else {
 		e.line("  " + r.dim(Money(v.CentsPerHour, v.Currency)+" per hour"))
 	}
@@ -151,7 +151,7 @@ func (r *Renderer) Projects(ps []core.Project) error {
 	r.rule(e)
 
 	if len(ps) == 0 {
-		r.empty(e, "no projects yet — create one with 'tempo project add <slug>'")
+		r.empty(e, "no projects yet — create one with 'tempo projects add <slug>'")
 		return e.err
 	}
 
